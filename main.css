@@ -1,4 +1,4 @@
-.navbar .dropdown-toggle, .navbar .dropdown-menu a {
+/* .navbar .dropdown-toggle, .navbar .dropdown-menu a {
     cursor: pointer;
 }
 
@@ -25,4 +25,52 @@
         border-top: .3em solid transparent;
         border-left: .3em solid;
     }
+} */
+body {
+    background: url(th.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1500px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    background: rgba(255, 255, 255, 0);
+}
+
+li {
+    float: left;
+    /* opacity: 50%; */
+}
+
+li a.pointer{
+    display: block;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3px;
+}
+#name {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 130%;
+    font-family: sans-serif;
+    margin-left: 80px;
+    font-weight: bold;
+}
+#lang {
+    margin-left: 70px;
+}
+/* Change the link color to #111 (black) on hover */
+li a.pointer:hover {
+    color: white;
 }
