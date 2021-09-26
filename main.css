@@ -172,3 +172,8 @@ form {
     height: auto;
     white-space: pre;
 }
+.content {
+    font-family: sans-serif;
+    background-color: aquamarine;
+    height: auto;
+}
