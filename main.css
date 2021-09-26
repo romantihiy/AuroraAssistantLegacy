@@ -1,8 +1,9 @@
 body {
     background: url(fon.jpeg);
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
+    position: fixed;
 }
 
 @media screen and (max-width: 640px) {
@@ -161,8 +162,8 @@ form {
 #result {
     background-color: white;
     margin-top: 3%;
-    border: 2px solid black;
-    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 30px;
     color: black; 
     margin-left: 22%;
     margin-right: 26%;
