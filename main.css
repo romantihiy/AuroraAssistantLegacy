@@ -171,7 +171,7 @@ body {
         -webkit-appearance: none;
     }
     form {
-        margin-top:200px;
+        margin-top:200px; /*убрать и заменить на айди*/
     }
     
     #result {
@@ -331,7 +331,7 @@ body {
         -webkit-appearance: none;
     }
     form {
-        margin-top:200px;
+        margin-top:200px; /*убрать и заменить на айди*/
     }
     
     #result {
@@ -492,7 +492,7 @@ body {
             -webkit-appearance: none;
         }
         form {
-            margin-top:200px;
+            margin-top:200px; /*убрать и заменить на айди*/
         }
         
         #result {
