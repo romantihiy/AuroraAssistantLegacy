@@ -25,6 +25,13 @@ body {
     border-radius: 30px;
     border: 2px solid rgba(0,0,0,0.5);
 }
+
+.pointer-left {
+    margin-right: 20%;
+}
+.pointer-right {
+    margin-left: 20%;
+}
 @media screen and (max-width: 640px) {
         body {font-size: 100%;}
     }
@@ -50,7 +57,17 @@ body {
         /* opacity: 50%; */
     }
     
-    li a.pointer{
+    li a.pointer-left{
+        display: block;
+        color: #c2c2c2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 3px;
+    }
+    li a.pointer-right{
         display: block;
         color: #c2c2c2;
         text-align: center;
@@ -75,7 +92,10 @@ body {
     
     
     /* Change the link color to #111 (black) on hover */
-    li a.pointer:hover {
+    li a.pointer-left:hover {
+        color: white;
+    }
+    li a.pointer-left:hover {
         color: white;
     }
     
@@ -89,6 +109,11 @@ body {
         background-size: 10%;
         margin-left: 20px;
         margin-top: 6px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    #login-img:hover {
+        opacity: 1;
     }
     .search {
         /* устанавливаем необходимую ширину формы в зависимости от дизайна
@@ -170,8 +195,8 @@ body {
     input[type="search"] {
         -webkit-appearance: none;
     }
-    form {
-        margin-top:200px; /*убрать и заменить на айди*/
+    #searchform {
+        margin-top:200px; 
     }
     
     #result {
@@ -210,7 +235,17 @@ body {
         /* opacity: 50%; */
     }
     
-    li a.pointer{
+    li a.pointer-left{
+        display: block;
+        color: #c2c2c2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 3px;
+    }
+    li a.pointer-right{
         display: block;
         color: #c2c2c2;
         text-align: center;
@@ -235,7 +270,10 @@ body {
     
     
     /* Change the link color to #111 (black) on hover */
-    li a.pointer:hover {
+    li a.pointer-left:hover {
+        color: white;
+    }
+    li a.pointer-right:hover {
         color: white;
     }
     
@@ -249,6 +287,11 @@ body {
         background-size: 10%;
         margin-left: 20px;
         margin-top: 6px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    #login-img:hover {
+        opacity: 1;
     }
     .search {
         /* устанавливаем необходимую ширину формы в зависимости от дизайна
@@ -330,8 +373,8 @@ body {
     input[type="search"] {
         -webkit-appearance: none;
     }
-    form {
-        margin-top:200px; /*убрать и заменить на айди*/
+    #searchform {
+        margin-top:200px; 
     }
     
     #result {
@@ -371,7 +414,17 @@ body {
             /* opacity: 50%; */
         }
         
-        li a.pointer{
+        li a.pointer-left{
+            display: block;
+            color: #c2c2c2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 3px;
+        }
+        li a.pointer-right{
             display: block;
             color: #c2c2c2;
             text-align: center;
@@ -396,10 +449,12 @@ body {
         
         
         /* Change the link color to #111 (black) on hover */
-        li a.pointer:hover {
+        li a.pointer-left:hover {
             color: white;
         }
-        
+        li a.pointer-right:hover {
+            color: white;
+        }
         #lang {
             background-size: 10%;
             margin-left: 800px;
@@ -410,6 +465,11 @@ body {
             background-size: 10%;
             margin-left: 20px;
             margin-top: 6px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        #login-img:hover {
+            opacity: 1;
         }
         .search {
             /* устанавливаем необходимую ширину формы в зависимости от дизайна
@@ -491,8 +551,8 @@ body {
         input[type="search"] {
             -webkit-appearance: none;
         }
-        form {
-            margin-top:200px; /*убрать и заменить на айди*/
+        #searchform {
+            margin-top:200px; 
         }
         
         #result {
