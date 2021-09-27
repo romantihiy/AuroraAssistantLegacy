@@ -15,6 +15,7 @@ body {
     margin-right: 20%;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,0.3);
+    width: auto;
 }
 .button {
     color: white;
@@ -180,7 +181,7 @@ body {
     
         /* добавляем прозрачность кнопке отправки */
         opacity: 0.5;
-        margin-left: 400px;
+        margin-left: 70%;
         top: 0;
         left: 0;
     }
@@ -358,7 +359,7 @@ body {
     
         /* добавляем прозрачность кнопке отправки */
         opacity: 0.5;
-        margin-left: 400px;
+        margin-left: 70%;
         top: 0;
         left: 0;
     }
@@ -536,7 +537,7 @@ body {
         
             /* добавляем прозрачность кнопке отправки */
             opacity: 0.5;
-            margin-left: 400px;
+            margin-left: 70%;
             top: 0;
             left: 0;
         }
