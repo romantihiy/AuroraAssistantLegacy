@@ -34,9 +34,11 @@ body {
 
 .pointer-left {
     margin-right: 20%;
+    white-space: nowrap;
 }
 .pointer-right {
     margin-left: 20%;
+    white-space: nowrap;
 }
 @media screen and (max-width: 640px) {
         body {font-size: 100%;}
