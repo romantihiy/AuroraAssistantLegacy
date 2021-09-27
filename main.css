@@ -5,6 +5,26 @@ body {
     background-size: 100%;
     position: fixed;
 }
+.content {
+    font-family: sans-serif;
+    background-color: white;
+    height: auto;
+    color: black;
+    opacity: 0.8;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.button {
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    opacity: 0.8;
+    height: auto;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.5);
+}
 @media screen and (max-width: 640px) {
         body {font-size: 100%;}
     }
@@ -166,26 +186,6 @@ body {
         font-family: sans-serif;
         height: auto;
         white-space: pre;
-    }
-    .content {
-        font-family: sans-serif;
-        background-color: white;
-        height: auto;
-        color: black;
-        opacity: 0.8;
-        margin-left: 20%;
-        margin-right: 20%;
-        border-radius: 8px;
-        border: 1px solid rgba(0,0,0,0.3);
-    }
-    .button {
-        color: white;
-        background-color: black;
-        font-family: sans-serif;
-        opacity: 0.8;
-        height: auto;
-        border-radius: 30px;
-        border: 2px solid rgba(0,0,0,0.5);
     }
 }
 @media screen and (max-width: 1024px) {
