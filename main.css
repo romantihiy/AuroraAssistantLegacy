@@ -347,11 +347,6 @@ body {
         height: auto;
         white-space: pre;
     }
-    .content {
-        font-family: sans-serif;
-        background-color: aquamarine;
-        height: auto;
-    }
 }
     
 @media screen and (min-width: 1280px) {
@@ -512,11 +507,6 @@ body {
             font-family: sans-serif;
             height: auto;
             white-space: pre;
-        }
-        .content {
-            font-family: sans-serif;
-            background-color: aquamarine;
-            height: auto;
         }
     }
 
