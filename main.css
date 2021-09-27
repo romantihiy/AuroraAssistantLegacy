@@ -5,175 +5,518 @@ body {
     background-size: 100%;
     position: fixed;
 }
-
 @media screen and (max-width: 640px) {
-    aside {width:98%;}
-    article {width:98%;}
-    #container {font-size:120%;}
-    #razdeli_opisanie {width:95%;}
+        body {font-size: 100%;}
+    }
+@media screen and (min-width: 1024px) {
+    body {
+        background: url(fon.jpeg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 150%;
+        position: fixed;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+        background: rgba(255, 255, 255, 0);
     }
     
-    @media screen and (max-width: 1024px) {
-     body {font-size:85%;}
+    li {
+        float: left;
+        /* opacity: 50%; */
     }
     
-    @media screen and (min-width: 1280px) {
-     body {font-size: 100%;}
+    li a.pointer{
+        display: block;
+        color: #c2c2c2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 3px;
+    }
+    #name {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 150%;
+        font-family: sans-serif;
+        margin-left: 190%;
+        font-weight: bold;
+    }
+    
+    
+    
+    /* Change the link color to #111 (black) on hover */
+    li a.pointer:hover {
+        color: white;
+    }
+    
+    #lang {
+        background-size: 10%;
+        margin-left: 800px;
+        margin-top: 3px;
+    }
+    
+    #login-img {
+        background-size: 10%;
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+    .search {
+        /* устанавливаем необходимую ширину формы в зависимости от дизайна
+        ** форма без проблем растягивается */
+        width: 40%;
+    
+        /* кнопку отправки будем позиционировать абсолютно,
+        ** поэтому необходимо это свойство */
+        position: relative;
+    }
+    
+    .search input {
+        /* отключаем бордюры у инпутов */
+        border: none;
+    }
+    
+    /* стили для поля ввода */
+    .search .input {
+        /* растягиваем поле ввода на всю ширину формы */
+        width: 100%;
+    
+        /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+        ** регулируем высоту формы
+        ** внутренний отступ справа (37px) делаем больше левого,
+        ** т.к. там будет размещена кнопка отправки	*/
+        padding: 8px 48px 12px 40px;
+    
+        /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    
+        /* добавляем внутренние тени */
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    
+        /* закругляем углы */
+        border-radius: 20px;
+    
+        background: #EEE;
+        font: 25px Tahoma, Arial, sans-serif;
+        color: #555;
+        outline: none;
+        margin-left: 70%;
+    }
+    
+    /* меняем оформление поля ввода при фокусе */
+    .search .input:focus {
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+        background: #E8E8E8;
+        color: #333;
+    }
+    
+    /* оформляем кнопку отправки */
+    .search .submit {
+        /* позиционируем кнопку абсолютно от правого края формы */
+        position: absolute;
+    
+        width: 50px;
+    
+        /* растягиваем кнопку на всю высоту формы */
+        height: 100%;
+    
+        cursor: pointer;
+        background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    
+        /* добавляем прозрачность кнопке отправки */
+        opacity: 0.5;
+        margin-left: 400px;
+        top: 0;
+        left: 0;
+    }
+    
+    /* при наведении курсора меняем прозрачность кнопки отправки */
+    .search .submit:hover {
+        opacity: 0.8;
+    }
+    
+    /* данное свойство необходимо для того, чтобы в браузерах
+    ** Chrome и Safari можно было стилизовать инпуты */
+    input[type="search"] {
+        -webkit-appearance: none;
+    }
+    form {
+        margin-top:200px;
+    }
+    
+    #result {
+        background-color: white;
+        margin-top: 3%;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 30px;
+        color: black; 
+        margin-left: 22%;
+        margin-right: 26%;
+        font-size: 25px;
+        font-family: sans-serif;
+        height: auto;
+        white-space: pre;
+    }
+    .content {
+        font-family: sans-serif;
+        background-color: white;
+        height: auto;
+        color: black;
+        opacity: 0.8;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+    .button {
+        color: white;
+        background-color: black;
+        font-family: sans-serif;
+        opacity: 0.8;
+        height: auto;
+        border-radius: 30px;
+        border: 2px solid rgba(0,0,0,0.5);
+    }
+}
+@media screen and (max-width: 1024px) {
+    body {
+        background: url(fon.jpeg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 250%;
+        position: fixed;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+        background: rgba(255, 255, 255, 0);
+    }
+    
+    li {
+        float: left;
+        /* opacity: 50%; */
+    }
+    
+    li a.pointer{
+        display: block;
+        color: #c2c2c2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 3px;
+    }
+    #name {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 150%;
+        font-family: sans-serif;
+        margin-left: 190%;
+        font-weight: bold;
+    }
+    
+    
+    
+    /* Change the link color to #111 (black) on hover */
+    li a.pointer:hover {
+        color: white;
+    }
+    
+    #lang {
+        background-size: 10%;
+        margin-left: 800px;
+        margin-top: 3px;
+    }
+    
+    #login-img {
+        background-size: 10%;
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+    .search {
+        /* устанавливаем необходимую ширину формы в зависимости от дизайна
+        ** форма без проблем растягивается */
+        width: 40%;
+    
+        /* кнопку отправки будем позиционировать абсолютно,
+        ** поэтому необходимо это свойство */
+        position: relative;
+    }
+    
+    .search input {
+        /* отключаем бордюры у инпутов */
+        border: none;
+    }
+    
+    /* стили для поля ввода */
+    .search .input {
+        /* растягиваем поле ввода на всю ширину формы */
+        width: 100%;
+    
+        /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+        ** регулируем высоту формы
+        ** внутренний отступ справа (37px) делаем больше левого,
+        ** т.к. там будет размещена кнопка отправки	*/
+        padding: 8px 48px 12px 40px;
+    
+        /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    
+        /* добавляем внутренние тени */
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    
+        /* закругляем углы */
+        border-radius: 20px;
+    
+        background: #EEE;
+        font: 25px Tahoma, Arial, sans-serif;
+        color: #555;
+        outline: none;
+        margin-left: 70%;
+    }
+    
+    /* меняем оформление поля ввода при фокусе */
+    .search .input:focus {
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+        background: #E8E8E8;
+        color: #333;
+    }
+    
+    /* оформляем кнопку отправки */
+    .search .submit {
+        /* позиционируем кнопку абсолютно от правого края формы */
+        position: absolute;
+    
+        width: 50px;
+    
+        /* растягиваем кнопку на всю высоту формы */
+        height: 100%;
+    
+        cursor: pointer;
+        background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    
+        /* добавляем прозрачность кнопке отправки */
+        opacity: 0.5;
+        margin-left: 400px;
+        top: 0;
+        left: 0;
+    }
+    
+    /* при наведении курсора меняем прозрачность кнопки отправки */
+    .search .submit:hover {
+        opacity: 0.8;
+    }
+    
+    /* данное свойство необходимо для того, чтобы в браузерах
+    ** Chrome и Safari можно было стилизовать инпуты */
+    input[type="search"] {
+        -webkit-appearance: none;
+    }
+    form {
+        margin-top:200px;
+    }
+    
+    #result {
+        background-color: white;
+        margin-top: 3%;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 30px;
+        color: black; 
+        margin-left: 22%;
+        margin-right: 26%;
+        font-size: 25px;
+        font-family: sans-serif;
+        height: auto;
+        white-space: pre;
+    }
+    .content {
+        font-family: sans-serif;
+        background-color: aquamarine;
+        height: auto;
+    }
+}
+    
+@media screen and (min-width: 1280px) {
+        body {
+            background: url(fon.jpeg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100%;
+            position: fixed;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            background: rgba(255, 255, 255, 0);
+        }
+        
+        li {
+            float: left;
+            /* opacity: 50%; */
+        }
+        
+        li a.pointer{
+            display: block;
+            color: #c2c2c2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 3px;
+        }
+        #name {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 150%;
+            font-family: sans-serif;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        
+        
+        
+        /* Change the link color to #111 (black) on hover */
+        li a.pointer:hover {
+            color: white;
+        }
+        
+        #lang {
+            background-size: 10%;
+            margin-left: 800px;
+            margin-top: 3px;
+        }
+        
+        #login-img {
+            background-size: 10%;
+            margin-left: 20px;
+            margin-top: 6px;
+        }
+        .search {
+            /* устанавливаем необходимую ширину формы в зависимости от дизайна
+            ** форма без проблем растягивается */
+            width: 40%;
+        
+            /* кнопку отправки будем позиционировать абсолютно,
+            ** поэтому необходимо это свойство */
+            position: relative;
+        }
+        
+        .search input {
+            /* отключаем бордюры у инпутов */
+            border: none;
+        }
+        
+        /* стили для поля ввода */
+        .search .input {
+            /* растягиваем поле ввода на всю ширину формы */
+            width: 100%;
+        
+            /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+            ** регулируем высоту формы
+            ** внутренний отступ справа (37px) делаем больше левого,
+            ** т.к. там будет размещена кнопка отправки	*/
+            padding: 8px 48px 12px 40px;
+        
+            /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        
+            /* добавляем внутренние тени */
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+        
+            /* закругляем углы */
+            border-radius: 20px;
+        
+            background: #EEE;
+            font: 25px Tahoma, Arial, sans-serif;
+            color: #555;
+            outline: none;
+            margin-left: 70%;
+        }
+        
+        /* меняем оформление поля ввода при фокусе */
+        .search .input:focus {
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+            background: #E8E8E8;
+            color: #333;
+        }
+        
+        /* оформляем кнопку отправки */
+        .search .submit {
+            /* позиционируем кнопку абсолютно от правого края формы */
+            position: absolute;
+        
+            width: 50px;
+        
+            /* растягиваем кнопку на всю высоту формы */
+            height: 100%;
+        
+            cursor: pointer;
+            background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+        
+            /* добавляем прозрачность кнопке отправки */
+            opacity: 0.5;
+            margin-left: 400px;
+            top: 0;
+            left: 0;
+        }
+        
+        /* при наведении курсора меняем прозрачность кнопки отправки */
+        .search .submit:hover {
+            opacity: 0.8;
+        }
+        
+        /* данное свойство необходимо для того, чтобы в браузерах
+        ** Chrome и Safari можно было стилизовать инпуты */
+        input[type="search"] {
+            -webkit-appearance: none;
+        }
+        form {
+            margin-top:200px;
+        }
+        
+        #result {
+            background-color: white;
+            margin-top: 3%;
+            border: 1px solid rgba(0,0,0,0.3);
+            border-radius: 30px;
+            color: black; 
+            margin-left: 22%;
+            margin-right: 26%;
+            font-size: 25px;
+            font-family: sans-serif;
+            height: auto;
+            white-space: pre;
+        }
+        .content {
+            font-family: sans-serif;
+            background-color: aquamarine;
+            height: auto;
+        }
     }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    background: rgba(255, 255, 255, 0);
-}
-
-li {
-    float: left;
-    /* opacity: 50%; */
-}
-
-li a.pointer{
-    display: block;
-    color: #c2c2c2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 3px;
-}
-#name {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 150%;
-    font-family: sans-serif;
-    margin-left: 50px;
-    font-weight: bold;
-}
-
-
-
-/* Change the link color to #111 (black) on hover */
-li a.pointer:hover {
-    color: white;
-}
-
-#lang {
-    background-size: 10%;
-    margin-left: 800px;
-    margin-top: 3px;
-}
-
-#login-img {
-    background-size: 10%;
-    margin-left: 20px;
-    margin-top: 6px;
-}
-.search {
-	/* устанавливаем необходимую ширину формы в зависимости от дизайна
-	** форма без проблем растягивается */
-	width: 40%;
-
-	/* кнопку отправки будем позиционировать абсолютно,
-	** поэтому необходимо это свойство */
-	position: relative;
-}
-
-.search input {
-	/* отключаем бордюры у инпутов */
-	border: none;
-}
-
-/* стили для поля ввода */
-.search .input {
-	/* растягиваем поле ввода на всю ширину формы */
-	width: 100%;
-
-	/* за счет верхнего (8px) и нижнего (9px) внутренних отступов
-	** регулируем высоту формы
-	** внутренний отступ справа (37px) делаем больше левого,
-	** т.к. там будет размещена кнопка отправки	*/
-	padding: 8px 48px 12px 40px;
-
-	/* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-
-	/* добавляем внутренние тени */
-	box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
-
-	/* закругляем углы */
-	border-radius: 20px;
-
-	background: #EEE;
-	font: 25px Tahoma, Arial, sans-serif;
-	color: #555;
-	outline: none;
-    margin-left: 70%;
-}
-
-/* меняем оформление поля ввода при фокусе */
-.search .input:focus {
-	box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
-	background: #E8E8E8;
-	color: #333;
-}
-
-/* оформляем кнопку отправки */
-.search .submit {
-	/* позиционируем кнопку абсолютно от правого края формы */
-    position: absolute;
-
-	width: 50px;
-
-	/* растягиваем кнопку на всю высоту формы */
-	height: 100%;
-
-	cursor: pointer;
-	background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
-
-	/* добавляем прозрачность кнопке отправки */
-	opacity: 0.5;
-    margin-left: 400px;
-    top: 0;
-    left: 0;
-}
-
-/* при наведении курсора меняем прозрачность кнопки отправки */
-.search .submit:hover {
-	opacity: 0.8;
-}
-
-/* данное свойство необходимо для того, чтобы в браузерах
-** Chrome и Safari можно было стилизовать инпуты */
-input[type="search"] {
-	-webkit-appearance: none;
-}
-form {
-    margin-top:200px;
-}
-
-#result {
-    background-color: white;
-    margin-top: 3%;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 30px;
-    color: black; 
-    margin-left: 22%;
-    margin-right: 26%;
-    font-size: 25px;
-    font-family: sans-serif;
-    height: auto;
-    white-space: pre;
-}
-.content {
-    font-family: sans-serif;
-    background-color: aquamarine;
-    height: auto;
-}
