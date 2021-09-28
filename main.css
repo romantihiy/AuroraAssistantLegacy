@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     body {
         background-size: 250%;
     }
@@ -124,7 +124,7 @@ li a.pointer-right{
     margin-left: 45%;
 }
 #contact {
-    margin-left: 25%;
+    margin-left: 35%;
 }
 
 /* Change the link color to #111 (black) on hover */
