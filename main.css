@@ -13,10 +13,19 @@
     body {
         background-size: 150%;
     }
+    #login {
+        opacity: 1;
+    }
 }
 @media screen and (min-width:640px) {
     body {
         background-size: 350%;
+    }
+    #login {
+        opacity: 0;
+    }
+    .pointer-right {
+        margin-top: 10%;
     }
 }
 
