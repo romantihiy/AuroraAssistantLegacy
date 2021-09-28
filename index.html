@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Меню для сайта</title>
     <link href="main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" media="screen and (orientation: portrait) and (max-width:640px), projection" href="main.css">
+    <link rel="stylesheet" media="screen and (orientation: portrait) and (max-width:640px), projection" href="main.csss">
     <link rel="stylesheet" media="screen and (orientation: portrait) and (max-width:1024px), projection" href="main.css">
     <link rel="stylesheet" media="screen and (orientation: portrait) and (min-width:1280px), projection" href="main.css">
     <link rel="icon" href="favicon.ico">
@@ -17,7 +17,7 @@
     <li><a href="#" class="pointer-left"id="name">AURORA</a></li>
     <li><a href="#" class="pointer-left" id="about">О нас</a></li>
     <li><a href="#" class="pointer-left" id="contact">Написать нам</a></li>
-    <li><a href="#" class="pointer-right" id="lang">English</a></li>
+    <li><a href="#" class="pointer-right" id="lang">Русский</a></li>
     <li><img src="user.jpg" id="login-img" width="40" height="40" href="#" class="pointer-right"></li>
     <li><a href="#" class="pointer-right" id="login">Войти</a></li>
   </ul>
@@ -25,10 +25,6 @@
     <input type="search" name="" class="input" />
     <input type="submit" name="" value="" class="submit" />
   </form>
-  <script>
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://127.0.0.1:8000/api/answer/', false);
-    xhr.send();
   </script>
   <div id="result">ОТВЕТ</div>
 </body>
