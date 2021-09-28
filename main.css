@@ -2,6 +2,12 @@
     body {
         background-size: 250%;
     }
+    #login {
+        opacity: 0;
+    }
+    .pointer-right {
+        margin-top: 10%;
+    }
 }
 @media screen and (min-width: 1280px) {
     body {
