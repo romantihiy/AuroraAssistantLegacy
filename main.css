@@ -67,6 +67,7 @@ body {
 .pointer-left {
     margin-right: 20%;
     white-space: nowrap;
+    margin-left: 10%;
 }
 .pointer-right {
     margin-left: 20%;
