@@ -1,0 +1,294 @@
+@media only screen and (max-width: 2560px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 165%;
+    }
+    #about {
+        font-size: 140%;
+    }
+    #contact {
+        font-size: 140%;
+    }
+    #lang {
+        font-size: 140%;
+        padding: 23px 2250px;
+    }
+    #login {
+        font-size: 140%;
+        padding: 23px 2380px;
+    }
+    #login-img{
+        padding: 15px 2330px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 2048px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 145%;
+    }
+    #about {
+        font-size: 120%;
+    }
+    #contact {
+        font-size: 120%;
+    }
+    #lang {
+        font-size: 120%;
+        padding: 23px 1738px;
+    }
+    #login {
+        font-size: 120%;
+        padding: 23px 1868px;
+    }
+    #login-img{
+        padding: 15px 1818px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 1920px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 135%;
+    }
+    #about {
+        font-size: 110%;
+    }
+    #contact {
+        font-size: 110%;
+    }
+    #lang {
+        font-size: 110%;
+        padding: 23px 1610px;
+    }
+    #login {
+        font-size: 110%;
+        padding: 23px 1740px;
+    }
+    #login-img{
+        padding: 15px 1690px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 1680px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 125%;
+    }
+    #about {
+        font-size: 100%;
+    }
+    #contact {
+        font-size: 100%;
+    }
+    #lang {
+        font-size: 100%;
+        padding: 23px 1370px;
+    }
+    #login {
+        font-size: 100%;
+        padding: 23px 1500px;
+    }
+    #login-img{
+        padding: 15px 1450px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 110%;
+    }
+    #about {
+        font-size: 90%;
+    }
+    #contact {
+        font-size: 90%;
+    }
+    #lang {
+        font-size: 90%;
+        padding: 23px 1130px;
+    }
+    #login {
+        font-size: 90%;
+        padding: 23px 1260px;
+    }
+    #login-img{
+        padding: 15px 1210px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 95%;
+    }
+    #about {
+        font-size: 70%;
+    }
+    #contact {
+        font-size: 70%;
+    }
+    #lang {
+        font-size: 70%;
+        padding: 23px 930px;
+    }
+    #login {
+        font-size: 70%;
+        padding: 23px 1060px;
+    }
+    #login-img{
+        padding: 15px 1010px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 90%;
+    }
+    #about {
+        font-size: 65%;
+    }
+    #contact {
+        font-size: 65%;
+    }
+    #lang {
+        font-size: 65%;
+        padding: 23px 714px;
+    }
+    #login {
+        font-size: 65%;
+        padding: 23px 844px;
+    }
+    #login-img{
+        padding: 15px 794px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 85%;
+    }
+    #about {
+        font-size: 60%;
+    }
+    #contact {
+        font-size: 60%;
+    }
+    #lang {
+        font-size: 60%;
+        padding: 23px 650px;
+    }
+    #login {
+        font-size: 60%;
+        padding: 23px 780px;
+    }
+    #login-img{
+        padding: 15px 730px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 75%;
+    }
+    #about {
+        font-size: 50%;
+    }
+    #contact {
+        font-size: 50%;
+    }
+    #lang {
+        font-size: 50%;
+        padding: 23px 410px;
+    }
+    #login {
+        font-size: 50%;
+        padding: 23px 540px;
+    }
+    #login-img{
+        padding: 15px 490px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+}
