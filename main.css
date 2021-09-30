@@ -1,32 +1,20 @@
-@media screen and (max-width: 1024px) {
-    body {
-        background-size: 250%;
-    }
-    .pointer-right {
-        margin-top: 10%;
-    }
-}
-@media screen and (min-width: 1280px) {
-    body {
-        background-size: 150%;
-    }
-}
-@media screen and (min-width:640px) {
-    body {
-        background-size: 350%;
-    }
-    .pointer-right {
-        margin-top: 10%;
-    }
+* {
+    transition: all .2s;
 }
 
+.clear{
+    clear: both;
+}
 
 body {
-    background: url(fon.jpeg);
-    background-position: top;
-    position: fixed;
-    background-size: 100%
+    background-color: #000;
+    color: #fff;
+    background: url("fon.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
+
 .content {
     font-family: sans-serif;
     background-color: white;
@@ -40,115 +28,89 @@ body {
     width: auto;
     text-align: center;
 }
-.button{
-    background: #FFFFFFFF;
 
-    height:35px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0 auto;
-    border: 2px solid #0540FF;
-    color:#0540FF;
-    }
-    .button:hover{
-    background: #0540FF;
-    color:#FFFFFFFF;
+.wrapper {
+    width: 100%;
 }
-
-.pointer-left {
-    margin-right: 20%;
-    white-space: nowrap;
-    margin-left: 10%;
+.header {
+    background: rgb(0, 0, 0, 0);
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
 }
-.pointer-right {
-    margin-left: 20%;
-    white-space: nowrap;
-}
-#login {
-    float: left;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    background: rgba(255, 255, 255, 0);
-}
-
-li {
-    float: left;
-    /* opacity: 50%; */
-}
-
-li a.pointer-left{
-    display: block;
-    color: #c2c2c2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 0.1%;
-}
-li a.pointer-right{
-    display: block;
-    color: #c2c2c2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 0.1%;
-}
-#name { /*ИЗМЕНИТЬ ПАДДИНГ НА ПРОЦЕНТЫ*/
+#name {
     display: block;
     color: white;
     text-align: center;
-    padding: 12px 16px;
+    padding: 20px 80px;
     text-decoration: none;
     font-size: 150%;
     font-family: sans-serif;
-    margin-left: 30%;
     font-weight: bold;
+    position: fixed;
 }
 #about {
-    margin-left: 45%;
+    display: block;
+    color: #c2c2c2;
+    text-align: center;
+    padding: 23px 210px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
 }
 #contact {
-    margin-left: 35%;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a.pointer-left:hover {
-    color: white;
-}
-li a.pointer-right:hover {
-    color: white;
+    display: block;
+    color: #c2c2c2;
+    text-align: center;
+    padding: 23px 275px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
 }
 #lang {
-    background-size: 10%;
-    margin-left: 700px;
-    margin-top: 0.1%;
+    display: block;
+    color: #c2c2c2;
+    text-align: center;
+    padding: 23px 1370px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+}
+#login {
+    display: block;
+    color: #c2c2c2;
+    text-align: center;
+    padding: 23px 1500px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+}
+
+.ask {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 355px;
+    float: right;
 }
 
 #login-img {
     background-size: 10%;
-    margin-left: 20px;
-    margin-top: 6px;
+    padding: 13px 1450px;
     cursor: pointer;
     opacity: 0.7;
     float: left;
 }
-#login-img:hover {
-    opacity: 1;
-}
+
 .search {
     /* устанавливаем необходимую ширину формы в зависимости от дизайна
     ** форма без проблем растягивается */
-    width: 35%;
-    margin-top: 17%;
-    margin-left: 8%;
+    width: 20%;
+    margin-top: 6%;
+    margin-left: 18%;
     /* кнопку отправки будем позиционировать абсолютно,
     ** поэтому необходимо это свойство */
     position: relative;
@@ -162,8 +124,7 @@ li a.pointer-right:hover {
 /* стили для поля ввода */
 .search .input {
     /* растягиваем поле ввода на всю ширину формы */
-    width: 100%;
-
+    width: 160%;
     /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
     ** регулируем высоту формы
     ** внутренний отступ справа (37px) делаем больше левого,
@@ -203,7 +164,6 @@ li a.pointer-right:hover {
 
     /* растягиваем кнопку на всю высоту формы */
     height: 100%;
-
     cursor: pointer;
     background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
 
@@ -228,16 +188,608 @@ input[type="search"] {
     margin-top: 200px; 
 }
 
-#result {
-    background-color: white;
-    margin-top: 100%;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 30px;
-    color: black; 
-    margin-left: 22%;
-    margin-right: 26%;
-    font-size: 25px;
+#team {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 200%;
     font-family: sans-serif;
-    height: auto;
-    white-space: pre;
-} 
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2560px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 185%;
+    }
+    #about {
+        font-size: 160%;
+    }
+    #contact {
+        font-size: 160%;
+    }
+    #lang {
+        font-size: 160%;
+        padding: 23px 2350px;
+    }
+    #login {
+        font-size: 160%;
+        padding: 23px 2480px;
+    }
+    #login-img{
+        padding: 13px 2430px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 2380px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 165%;
+    }
+    #about {
+        font-size: 140%;
+    }
+    #contact {
+        font-size: 140%;
+    }
+    #lang {
+        font-size: 140%;
+        padding: 23px 1938px;
+    }
+    #login {
+        font-size: 140%;
+        padding: 23px 2068px;
+    }
+    #login-img{
+        padding: 13px 2018px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+
+@media only screen and (max-width: 2048px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 145%;
+    }
+    #about {
+        font-size: 120%;
+    }
+    #contact {
+        font-size: 120%;
+    }
+    #lang {
+        font-size: 120%;
+        padding: 23px 1738px;
+    }
+    #login {
+        font-size: 120%;
+        padding: 23px 1868px;
+    }
+    #login-img{
+        padding: 13px 1818px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+
+@media only screen and (max-width: 1920px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 135%;
+    }
+    #about {
+        font-size: 110%;
+    }
+    #contact {
+        font-size: 110%;
+    }
+    #lang {
+        font-size: 110%;
+        padding: 23px 1610px;
+    }
+    #login {
+        font-size: 110%;
+        padding: 23px 1740px;
+    }
+    #login-img{
+        padding: 13px 1690px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 1840px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 125%;
+    }
+    #about {
+        font-size: 100%;
+    }
+    #contact {
+        font-size: 100%;
+    }
+    #lang {
+        font-size: 100%;
+        padding: 23px 1470px;
+    }
+    #login {
+        font-size: 100%;
+        padding: 23px 1700px;
+    }
+    #login-img{
+        padding: 13px 1650px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+
+@media only screen and (max-width: 1680px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 125%;
+    }
+    #about {
+        font-size: 100%;
+    }
+    #contact {
+        font-size: 100%;
+    }
+    #lang {
+        font-size: 100%;
+        padding: 23px 1370px;
+    }
+    #login {
+        font-size: 100%;
+        padding: 23px 1500px;
+    }
+    #login-img{
+        padding: 13px 1450px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 110%;
+    }
+    #about {
+        font-size: 90%;
+    }
+    #contact {
+        font-size: 90%;
+    }
+    #lang {
+        font-size: 90%;
+        padding: 23px 1130px;
+    }
+    #login {
+        font-size: 90%;
+        padding: 23px 1260px;
+    }
+    #login-img{
+        padding: 13px 1210px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 1330px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 117%;
+    }
+    #about {
+        font-size: 92%;
+    }
+    #contact {
+        font-size: 92%;
+    }
+    #lang {
+        font-size: 92%;
+        padding: 23px 1030px;
+    }
+    #login {
+        font-size: 92%;
+        padding: 23px 1160px;
+    }
+    #login-img{
+        padding: 13px 1110px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 1240px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 117%;
+    }
+    #about {
+        font-size: 92%;
+    }
+    #contact {
+        font-size: 92%;
+    }
+    #lang {
+        font-size: 92%;
+        padding: 23px 860px;
+    }
+    #login {
+        font-size: 92%;
+        padding: 23px 970px;
+    }
+    #login-img{
+        padding: 13px 920px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 110%;
+    }
+    #about {
+        font-size: 85%;
+    }
+    #contact {
+        font-size: 85%;
+    }
+    #lang {
+        font-size: 85%;
+        padding: 23px 764px;
+    }
+    #login {
+        font-size: 85%;
+        padding: 23px 894px;
+    }
+    #login-img{
+        padding: 13px 844px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 107%;
+    }
+    #about {
+        font-size: 82%;
+    }
+    #contact {
+        font-size: 82%;
+    }
+    #lang {
+        font-size: 82%;
+        padding: 23px 760px;
+    }
+    #login {
+        font-size: 82%;
+        padding: 23px 890px;
+    }
+    #login-img{
+        padding: 13px 840px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 105%;
+        padding: 20px 30px;
+    }
+    #about {
+        font-size: 80%;
+        padding: 23px 125px;
+    }
+    #contact {
+        font-size: 80%;
+        padding: 23px 175px;
+    }
+    #lang {
+        font-size: 80%;
+        padding: 23px 650px;
+    }
+    #login {
+        font-size: 80%;
+        padding: 23px 780px;
+    }
+    #login-img{
+        padding: 13px 730px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 100%;
+        padding: 20px 25px;
+    }
+    #about {
+        font-size: 75%;
+        padding: 23px 117px;
+    }
+    #contact {
+        font-size: 75%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 75%;
+        padding: 23px 560px;
+    }
+    #login {
+        font-size: 75%;
+        padding: 23px 670px;
+    }
+    #login-img{
+        padding: 13px 620px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 95%;
+        padding: 20px 20px;
+    }
+    #about {
+        font-size: 70%;
+        padding: 23px 110px;
+    }
+    #contact {
+        font-size: 70%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 70%;
+        padding: 23px 420px;
+    }
+    #login {
+        font-size: 70%;
+        padding: 23px 540px;
+    }
+    #login-img{
+        padding: 13px 490px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 95%;
+        padding: 20px 20px;
+    }
+    #about {
+        font-size: 70%;
+        padding: 23px 110px;
+    }
+    #contact {
+        font-size: 70%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 70%;
+        padding: 23px 370px;
+    }
+    #login {
+        font-size: 70%;
+        padding: 23px 500px;
+    }
+    #login-img{
+        padding: 13px 450px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 95%;
+        padding: 20px 20px;
+    }
+    #about {
+        font-size: 70%;
+        padding: 23px 110px;
+    }
+    #contact {
+        font-size: 70%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 70%;
+        padding: 23px 310px;
+    }
+    #login {
+        font-size: 70%;
+        padding: 23px 440px;
+    }
+    #login-img{
+        padding: 13px 390px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 80%;
+        padding: 20px 20px;
+    }
+    #about {
+        font-size: 55%;
+        padding: 23px 110px;
+    }
+    #contact {
+        font-size: 55%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 55%;
+        padding: 23px 260px;
+    }
+    #login {
+        font-size: 55%;
+        padding: 23px 390px;
+    }
+    #login-img{
+        padding: 13px 340px;
+    }
+    .ask {
+        background: rgb(0, 0, 0, 0);
+    }
+}
