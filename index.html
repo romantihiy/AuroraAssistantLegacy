@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
-    <title>Меню для сайта</title>
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" media="screen and (orientation: portrait) and (max-width:640px), projection" href="main.csss">
-    <link rel="stylesheet" media="screen and (orientation: portrait) and (max-width:1024px), projection" href="main.css">
-    <link rel="stylesheet" media="screen and (orientation: portrait) and (min-width:1280px), projection" href="main.css">
+    <title>CSS3 media</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
     <link rel="icon" href="favicon.ico">
-    
 </head>
-<body>    
-  <ul>
-    <li><a href="#" class="pointer-left"id="name">AURORA</a></li>
-    <li><a href="#" class="pointer-left" id="about">О нас</a></li>
-    <li><a href="#" class="pointer-left" id="contact">Написать нам</a></li>
-    <li><a href="#" class="pointer-right" id="lang">Русский</a></li>
-    <li><img src="user.jpg" id="login-img" width="40" height="40" href="#" class="pointer-right"></li>
-    <li><a href="#" class="pointer-right" id="login">Войти</a></li>
-  </ul>
-  <form action="" method="post" class="search" onsubmit="alert(input.value);return false">
-    <input type="search" name="" class="input" />
-    <input type="submit" name="" value="" class="submit" />
-  </form>
-  </script>
-  <div id="result">ОТВЕТ</div>
+<body>
+<div class="wrapper">
+<div class="header">
+    <a href="#" id="name">AURORA</a>
+    <a href="#" class ="pointer" id="about">О нас</a>
+    <a href="#" class ="pointer" id="contact">Написать нам</a>
+    <a href="#" class ="pointer" id="lang">English</a>
+    <img src="user.jpg" id="login-img" width="40" height="40" href="#" class="pointer-right">
+    <a href="#" class ="pointer" id="login">Войти</a>
+</div>
+<div class="content">
+    <form action="" method="post" class="search">
+        <input type="search" name="" class="input" />
+        <input type="submit" name="" value="" class="submit" />
+      </form>
+</div>
+<div class="clear"></div>
+</div>
 </body>
 </html>

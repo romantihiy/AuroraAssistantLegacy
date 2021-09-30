@@ -6,6 +6,38 @@
         background: rgb(0, 0, 0, 0);
     }
     #name {
+        font-size: 185%;
+    }
+    #about {
+        font-size: 160%;
+    }
+    #contact {
+        font-size: 160%;
+    }
+    #lang {
+        font-size: 160%;
+        padding: 23px 2350px;
+    }
+    #login {
+        font-size: 160%;
+        padding: 23px 2480px;
+    }
+    #login-img{
+        padding: 13px 2430px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 2380px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
         font-size: 165%;
     }
     #about {
@@ -16,17 +48,18 @@
     }
     #lang {
         font-size: 140%;
-        padding: 23px 2250px;
+        padding: 23px 1938px;
     }
     #login {
         font-size: 140%;
-        padding: 23px 2380px;
+        padding: 23px 2068px;
     }
     #login-img{
-        padding: 15px 2330px;
+        padding: 13px 2018px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
 
@@ -56,10 +89,11 @@
         padding: 23px 1868px;
     }
     #login-img{
-        padding: 15px 1818px;
+        padding: 13px 1818px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
 
@@ -89,10 +123,43 @@
         padding: 23px 1740px;
     }
     #login-img{
-        padding: 15px 1690px;
+        padding: 13px 1690px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 1840px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 125%;
+    }
+    #about {
+        font-size: 100%;
+    }
+    #contact {
+        font-size: 100%;
+    }
+    #lang {
+        font-size: 100%;
+        padding: 23px 1470px;
+    }
+    #login {
+        font-size: 100%;
+        padding: 23px 1700px;
+    }
+    #login-img{
+        padding: 13px 1650px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
 }
 
 
@@ -122,10 +189,11 @@
         padding: 23px 1500px;
     }
     #login-img{
-        padding: 15px 1450px;
+        padding: 13px 1450px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
 
@@ -155,12 +223,45 @@
         padding: 23px 1260px;
     }
     #login-img{
-        padding: 15px 1210px;
+        padding: 13px 1210px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
+
+@media only screen and (max-width: 1330px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 117%;
+    }
+    #about {
+        font-size: 92%;
+    }
+    #contact {
+        font-size: 92%;
+    }
+    #lang {
+        font-size: 92%;
+        padding: 23px 1030px;
+    }
+    #login {
+        font-size: 92%;
+        padding: 23px 1160px;
+    }
+    #login-img{
+        padding: 13px 1110px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
+}
 
 
 @media only screen and (max-width: 1240px) {
@@ -171,27 +272,28 @@
         background: rgb(0, 0, 0, 0);
     }
     #name {
-        font-size: 95%;
+        font-size: 117%;
     }
     #about {
-        font-size: 70%;
+        font-size: 92%;
     }
     #contact {
-        font-size: 70%;
+        font-size: 92%;
     }
     #lang {
-        font-size: 70%;
-        padding: 23px 930px;
+        font-size: 92%;
+        padding: 23px 860px;
     }
     #login {
-        font-size: 70%;
-        padding: 23px 1060px;
+        font-size: 92%;
+        padding: 23px 970px;
     }
     #login-img{
-        padding: 15px 1010px;
+        padding: 13px 920px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
 
@@ -204,29 +306,62 @@
         background: rgb(0, 0, 0, 0);
     }
     #name {
-        font-size: 90%;
+        font-size: 110%;
     }
     #about {
-        font-size: 65%;
+        font-size: 85%;
     }
     #contact {
-        font-size: 65%;
+        font-size: 85%;
     }
     #lang {
-        font-size: 65%;
-        padding: 23px 714px;
+        font-size: 85%;
+        padding: 23px 764px;
     }
     #login {
-        font-size: 65%;
-        padding: 23px 844px;
+        font-size: 85%;
+        padding: 23px 894px;
     }
     #login-img{
-        padding: 15px 794px;
+        padding: 13px 844px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 107%;
+    }
+    #about {
+        font-size: 82%;
+    }
+    #contact {
+        font-size: 82%;
+    }
+    #lang {
+        font-size: 82%;
+        padding: 23px 760px;
+    }
+    #login {
+        font-size: 82%;
+        padding: 23px 890px;
+    }
+    #login-img{
+        padding: 13px 840px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
+}
 
 
 @media only screen and (max-width: 960px) {
@@ -237,30 +372,67 @@
         background: rgb(0, 0, 0, 0);
     }
     #name {
-        font-size: 85%;
+        font-size: 105%;
+        padding: 20px 30px;
     }
     #about {
-        font-size: 60%;
+        font-size: 80%;
+        padding: 23px 125px;
     }
     #contact {
-        font-size: 60%;
+        font-size: 80%;
+        padding: 23px 175px;
     }
     #lang {
-        font-size: 60%;
+        font-size: 80%;
         padding: 23px 650px;
     }
     #login {
-        font-size: 60%;
+        font-size: 80%;
         padding: 23px 780px;
     }
     #login-img{
-        padding: 15px 730px;
+        padding: 13px 730px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
 }
 
-
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 100%;
+        padding: 20px 25px;
+    }
+    #about {
+        font-size: 75%;
+        padding: 23px 117px;
+    }
+    #contact {
+        font-size: 75%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 75%;
+        padding: 23px 560px;
+    }
+    #login {
+        font-size: 75%;
+        padding: 23px 670px;
+    }
+    #login-img{
+        padding: 13px 620px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
+}
 
 @media only screen and (max-width: 720px) {
     .wrapper {
@@ -270,25 +442,101 @@
         background: rgb(0, 0, 0, 0);
     }
     #name {
-        font-size: 75%;
+        font-size: 95%;
+        padding: 20px 20px;
     }
     #about {
-        font-size: 50%;
+        font-size: 70%;
+        padding: 23px 110px;
     }
     #contact {
-        font-size: 50%;
+        font-size: 70%;
+        padding: 23px 160px;
     }
     #lang {
-        font-size: 50%;
-        padding: 23px 410px;
+        font-size: 70%;
+        padding: 23px 420px;
     }
     #login {
-        font-size: 50%;
+        font-size: 70%;
         padding: 23px 540px;
     }
     #login-img{
-        padding: 15px 490px;
+        padding: 13px 490px;
     }
     .conect {
         background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 95%;
+        padding: 20px 20px;
+    }
+    #about {
+        font-size: 70%;
+        padding: 23px 110px;
+    }
+    #contact {
+        font-size: 70%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 70%;
+        padding: 23px 370px;
+    }
+    #login {
+        font-size: 70%;
+        padding: 23px 500px;
+    }
+    #login-img{
+        padding: 13px 450px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header {
+        background: rgb(0, 0, 0, 0);
+    }
+    #name {
+        font-size: 95%;
+        padding: 20px 20px;
+    }
+    #about {
+        font-size: 70%;
+        padding: 23px 110px;
+    }
+    #contact {
+        font-size: 70%;
+        padding: 23px 160px;
+    }
+    #lang {
+        font-size: 70%;
+        padding: 23px 310px;
+    }
+    #login {
+        font-size: 70%;
+        padding: 23px 440px;
+    }
+    #login-img{
+        padding: 13px 390px;
+    }
+    .conect {
+        background: rgb(0, 0, 0, 0);
+    }
 }
