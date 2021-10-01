@@ -1,7 +1,7 @@
 # Aurora Assistant 
 ### Front-end + Back-end main branch
 
-# How to install?
+# How to run?
 ```bash
 cd mysite
 ```
