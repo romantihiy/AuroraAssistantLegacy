@@ -1,0 +1,15 @@
+{% extends "main/base(2).html" %}
+
+{% block title %}
+Профиль
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h2>{{ user.get_username }}</h2>
+    <p><a href="{% url 'reset' %}">Смена пароля</a></p>
+    {% if user.is_superuser %}
+    <p><a href="/admin/">Администрация</a></p>
+    {% endif %}
+</div>
+{% endblock %}
