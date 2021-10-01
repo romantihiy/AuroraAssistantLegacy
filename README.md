@@ -1,5 +1,5 @@
 # Aurora Assistant 
-Front-end + Back-end main branch
+### Front-end + Back-end main branch
 
 # How to install?
 ```bash
